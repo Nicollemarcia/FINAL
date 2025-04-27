@@ -1,0 +1,566 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+img, svg {
+    display: block;
+    width: 100%;
+    height: inherit;
+}
+
+svg {
+    fill: currentColor;
+}
+
+:root {
+    font-size: 100%;
+    scroll-behavior: smooth;
+
+    --color-azul-oscuro:#22263a;
+    --color-crema:#dba764; 
+    --color-blanco-roto: #F2F2F2; 
+}
+
+body {
+    font-family: 'Dancing Script', Poppins, ui-sans-serif, system-ui;
+    font-weight: 900;
+    font-size: 1.5vw;
+    hyphens: auto;
+    background-color: var(--color-blanco-roto); /* Blanco roto */
+    color: #333333; /* Gris oscuro para el texto */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+.Intro-texto {
+    font-size: 2vw;
+    color: var(--color-crema); /* Azul oscuro */
+}
+
+.Intro-titulo {
+    font-size: 5vw;
+    color: var(--color-crema); /* Azul oscuro */
+}
+
+.Info-donde.Donde {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+
+    display: flex;
+    flex-flow: column  nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    text-align: center;
+}
+.Donde-text{
+    width: 80%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.Donde-mapa {
+    width: 40%;
+    border-radius: 5rem;
+}
+
+.Donde-p {
+    width: 40%;
+    height: 26rem;
+    background-color: var(--color-azul-oscuro); 
+
+    padding: 2rem;
+    border-radius: 5rem;
+    box-shadow: 0 0 10px 5px rgba(212, 175, 55, 0.7); 
+    text-align: center;
+
+    font-size: 2rem;
+    color: var(--color-crema); 
+}
+
+
+
+
+.info-horarios.Horario {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-azul-oscuro);
+    padding: 2rem ;
+
+}
+.Horarios-cuadro{
+    width: 80%;
+    margin: auto;
+}
+.Horario-titulo {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--color-crema); /* Azul oscuro */
+}
+
+.Horario-linea.Info {
+    width: 0;
+    height: 50rem;
+    margin: auto;
+    border-left: 2px solid var(--color-crema); 
+}
+
+.Horario-Info {
+    position: relative;
+}
+
+.Info-texto.Texto {
+    width: 40%;
+    max-height: 60rem;
+    position: absolute;
+    top: 5%;
+    left:5%;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-crema);
+}
+
+.texto-Info.Info {
+    margin: 1rem 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Info-texto.Info {
+    width:40%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.info-titulo {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+}
+
+.texto {
+    margin: 2rem;
+}
+
+.texto-texto {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.Info-img {
+    width: 40%;
+    height: 7rem;
+    margin: 1rem auto;
+    border-radius: 10rem;
+    object-fit: cover;
+}
+
+.Info-texto.derecha {
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-crema); /* Azul oscuro */
+}
+
+.derecha {
+    margin: 2rem;
+}
+
+.bi.bi-arrow-right {
+    width: 10%;
+    color: var(--color-crema); /* Dorado */
+}
+
+.bi.bi-arrow-left-short {
+    width: 10%;
+    color: var(--color-crema); /* Dorado */
+}
+
+.svg-info {
+    width: 20%;
+}
+
+
+
+
+
+
+.Menu-titulo {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.Menu-comida {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1.5rem;
+}
+
+.Info-menu.Menu {
+    width: 100%;
+    height: 100vh;
+    background-color:var(--color-blanco-roto); 
+
+    padding: 1rem;
+
+
+    text-align: center;
+    color: var(--color-crema); 
+}
+.Menu-div.Menu{
+    width: 60%;
+    background-color: var(--color-azul-oscuro);
+    margin: auto;
+    padding: 2rem;
+
+
+    border-radius: 5rem;
+    box-shadow: 0 0 10px 5px rgba(212, 175, 55, 0.7); 
+}
+
+
+.Coctacanos.Contacto {
+    width: 100%;
+    height: 45vh;
+    margin: auto;
+    padding: 2rem 0 0 0;
+}
+
+.Contacto-contenedor {
+    width: 80%;
+    height: 15rem;
+    background-color: var(--color-azul-oscuro);
+    margin: auto;
+    padding: 2rem;
+    border-radius: 5rem;
+    box-shadow: 0 0 10px 5px rgba(212, 175, 55, 0.3);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Contacto-redes.Redes {
+    width: 20%;
+    margin: auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: start;
+
+    color: var(--color-crema);
+}
+.contacto-Nicolle{
+    color: var(--color-crema);
+}
+.contacto-Misael{
+    color: var(--color-crema);
+}
+.bi.bi-redes {
+    width: 100%;
+}
+.contacto-novios {
+    margin: 0 0 1rem 0;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--color-crema); 
+}
+
+@media(max-width:1920px){
+    .Intro-texto{
+        font-size: 5rem;
+    }
+    .Donde-mapa{
+        height: 35rem;
+    }
+    .Donde-p{
+        height: 35rem;
+        padding: 5rem;
+    }
+    .Horario-titulo{
+        font-size: 5rem;
+    }
+    .Info-texto.Text{
+        font-size: 2rem;
+    }
+    .info-titulo{
+        font-size: 3rem;
+    }
+    .Horario-linea.Info{
+        height: 50rem;
+    }
+    .Menu-div.Menu{
+        width: 80%;
+        height: 60rem;
+        font-size: 1.8rem;
+    }
+    .Menu-comida{
+        font-size: 3rem;
+    }
+    .contacto-novios{
+        font-size: 4rem;
+    }
+    .Contacto-contenedor{
+        width: 90%;
+        height: 20rem;
+        padding: 5rem;
+        font-size: 2rem;
+    }
+    .Redes-li{
+        width: 30%;
+    }
+}
+
+@media(max-width:1440px){
+    .Intro-texto{
+        font-size: 4rem;
+    }
+    .Donde-p{
+        height: 33rem;
+        padding: 3rem;
+    }
+    .Horario-linea.Info{
+        height: 45rem;
+    }
+    .Menu-div.Menu{
+        height: 55rem;
+        font-size: 1.8rem;
+    }
+    .Menu-comida{
+        font-size: 2rem;
+    }
+    .Contacto-contenedor{
+        height: 15rem;
+    }
+}
+@media(max-width:1366px){
+    .Intro-texto{
+        font-size: 3rem;
+    }
+    .Donde-mapa{
+        height: 30rem;
+    }
+    .Donde-p{
+        height: 30rem;
+        padding: 2rem;
+    }
+    .Horario-titulo{
+        font-size: 3rem;
+    }
+    .info-titulo{
+        font-size: 2rem;
+    }
+    .Horario-linea.Info{
+        height: 40rem;
+    }
+    .Info-texto.Texto{
+        top: 0;
+    }
+    .Info-texto.derecha{
+        top: 1%;
+    }
+    .Menu-div.Menu{
+        height: 45rem;
+        font-size: 1.3rem;
+    }
+    .Menu-titulo{
+        font-size: 2rem;
+    }
+    .Menu-comida{
+        font-size: 1.5rem;
+    }
+    .Coctacanos.Contacto{
+        padding: 1rem;
+    }
+}
+@media(max-width:720px){
+    .Donde-text{
+        flex-flow: column nowrap;
+        gap: 2rem;
+    }
+    .Donde-mapa{
+        width: 90%;
+        height: 25rem;
+    }
+    .Donde-p{
+        width: 90%;
+        height: 25rem;
+    }
+    .Horario-Info{
+        width: 70%;
+        margin: auto;
+    }
+    .Horario-linea.Info{
+        display: none;
+    }
+    .Info-texto.Texto{
+        width:100%;
+        position: relative;
+
+        left: 0;
+    }
+    .Info-texto.derecha{
+        width: 100%;
+        margin: auto;
+        position: relative;
+
+        left: 0;
+    }
+    .bi.bi-arrow-left-short{
+        display: none;
+    }
+    .bi.bi-arrow-right{
+        display: none;
+    }
+    .info-horarios.Horario{
+        padding: 2rem 0;
+    }
+    .Horarios-cuadro{
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    .Horario-titulo{
+        font-size: 4rem;
+    }
+    .info-titulo{
+        font-size: 3rem;
+    }
+    .texto{
+        margin: 0;
+    }
+    .derecha{
+        margin: 0;
+    }
+    .Menu-div.Menu{
+        height: 76rem;
+        font-size: 1.7rem;
+    }
+    .Menu-titulo{
+        padding: 1rem;
+        font-size: 3rem;
+    }
+    .Menu-comida{
+        font-size: 3rem;
+    }
+    .contacto-novios{
+        padding: 2rem;
+    }
+    .Contacto-contenedor{
+        flex-flow: column;
+        height: 20rem;
+    }
+    .Redes-li{
+        width: 80%;
+    }
+}
+
+
+@media(max-width:375px){
+   .Intro-pag.Intro{
+        width: 90%;
+        padding: 1rem;
+   }
+   .Intro-texto{
+    font-size: 1.5rem;
+   }
+   .Intro-titulo{
+    font-size: 1rem;
+   }
+    .Donde-mapa{
+        height: 15rem;
+    }
+    .Donde-p{
+        height: 15rem;
+        font-size: 1rem;
+        padding: 2rem;
+    }
+    .Horario-titulo{
+        font-size: 2rem;
+    }
+    .Horario-Info{
+        width: 90%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
+    .info-titulo{
+        font-size: 2rem;
+    }
+    .Info-texto.Info{
+        width: 50%;
+        text-align: center;
+    }
+    .Info-img{
+        display: none;
+    }
+    .Menu-div.Menu{
+        width: 100%;
+        height: 40rem;
+        font-size: 1rem;
+    }
+    .Menu-comida{
+        padding: 1.2rem;
+        font-size: 1rem;
+    }
+    .Menu-titulo{
+        font-size: 1.4rem;
+        padding: 0;
+    }
+    .contacto-novios{
+        font-size: 2rem;
+        padding: 0;
+    }
+    .Contacto-contenedor{
+        height: 13rem;
+        padding: 3rem;
+        flex-flow: column;
+        gap: 1rem;
+    }
+    .contacto-Nicolle{
+        font-size: 1.2rem;
+    }
+    .contacto-Misael{
+        font-size: 1.2rem;
+    }
+    .Contacto-redes.Redes{
+        width: 25%;
+    }
+}

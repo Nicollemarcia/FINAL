@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a {
+    display: inline;
+}
+
+img, svg {
+    display: block;
+    width: 100%;
+    height: inherit;
+}
+
+svg {
+    fill: currentColor;
+}
+
+:root {
+    font-size: 100%;
+    scroll-behavior: smooth;
+
+    --color-azul-oscuro:#22263a;
+    --color-crema:#dba764; 
+    --color-blanco-roto: #F2F2F2; 
+}
+
+body {
+    font-family: 'Dancing Script', Poppins, ui-sans-serif, system-ui;
+    font-weight: 900;
+    font-size: 1.5rem;
+    hyphens: auto;
+    background-color: var(--color-blanco-roto); 
+    color: var(--color-crema); 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+.Historia-titulo{
+    font-weight: 900;
+    font-size: 5rem;
+}
+.Historia-nombre{
+    font-weight: 500;
+    font-size: 3rem;
+}
+.Nuestra-historia.Historia{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-azul-oscuro);
+
+    padding-top: 6rem;
+    text-align: center;
+}
+.Historia-cuadros.Cuadros{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.Cuadros-div.Mas{
+    width: 25%;
+    height: 25rem;
+    background-color: var(--color-blanco-roto);
+    margin: 5rem 0 ;
+    padding: 7rem 3rem ;
+}
+.Hitoria-novios{
+    width: 100%;
+    height: 100vh;
+    background-color:var(--color-blanco-roto);
+    padding: 2rem;
+}
+.Recuerdos-fotos.Fotos{
+    margin:  auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem; 
+    grid-template-areas: 
+    "item1 item2 item3"
+    "item4 empty item5"
+    "item6 item7 item8";
+}
+.Fotos{
+    width: 100%;
+    height: 18rem;
+    margin: auto;
+
+}
+.Foto-beso { 
+    grid-area: item1; 
+    background-color: aqua;
+    object-fit: cover;
+}
+.Foto-besoyo { 
+    grid-area: item2;
+    background-color: aqua;
+    object-fit: cover;
+}
+.Foto-cola {
+    grid-area: item3;
+    background-color: aqua;
+    object-fit: cover;
+}
+.Foto-baile {
+    grid-area: item4; 
+    background-color: aqua;
+    object-fit: cover;
+}
+.Foto-mirador {
+    grid-area: item5;
+    background-color: aqua;
+    object-fit: cover;
+}
+.Foto-muelle { 
+    grid-area: item6;
+    background-color: aqua;
+    object-fit: cover;
+}
+.Foto-playa {
+    grid-area: item7;
+    background-color: aqua; 
+    object-fit: cover;
+}
+.Foto-ruta { 
+    grid-area: item8; 
+    background-color: aqua;
+    object-fit: cover;
+}
+.audio-container{
+
+    grid-area: empty;
+}
+.titulo-audio{
+    font-size: 3rem;
+    padding: 2rem;
+   text-align: center;
+}
+.controls {
+    width: 100%;
+    border-radius: 1rem;
+  }
+ 
+
+@media(max-width:1440px){
+    .Recuerdos-fotos.Fotos{
+        height: 15rem;
+    }
+  
+}
+@media(max-width:1366px){
+    .Recuerdos-fotos.Fotos{
+        height: 13rem;
+    }
+
+}
+
+
+@media(max-width:720px){
+    
+.Nuestra-historia.Historia{
+    padding-top: 3rem;
+}
+    
+.Historia-nombre{
+    padding: 1rem 2rem;
+}
+.Historia-cuadros.Cuadros{
+    flex-flow: column nowrap;
+}
+.Cuadros-div.Mas{
+    width: 80%;
+    height: 15rem;
+    margin: 1rem;
+    padding: 5rem;
+}
+
+.Recuerdos-fotos.Fotos{
+    width: 90%;
+    height: 15rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+    "item1 item2"
+     "item3 item4"
+     "empty empty"
+     "item5 item6"
+    "item7 item8";
+}
+}
+@media(max-width:375px){
+.Nuestra-historia.Historia {
+    padding-top: 1rem;
+}
+.Historia-titulo{
+    width: 90%;
+    font-size: 2rem;
+    margin: auto;
+}
+.Historia-nombre{
+    font-size: 1rem;
+}
+.Cuadros-div.Mas {
+    height: 8rem;
+    margin: 1rem;
+    padding: 2rem;
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+.Hitoria-novios{
+    padding: 1rem;
+}
+.Recuerdos-fotos.Fotos{
+    width: 100%;
+    height: 6.5rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas:
+    "item1 item2"
+    "item3 item4"
+    "empty empty"
+    "item5 item6"
+    "item7 item8";
+}
+
+.titulo-audio{
+    font-size: 1rem;
+    padding: 1rem;
+}
+}
